@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#7f1d1d"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fb923c"/>
+      <stop offset="1" stop-color="#dc2626"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" fill="url(#bg)"/>
+
+  <!-- binary rain -->
+  <g font-family="Consolas, monospace" font-size="14" fill="#f87171" opacity=".22">
+    <text x="20" y="40">01101001 10110</text><text x="30" y="90">110 0101101</text>
+    <text x="15" y="290">10011 0110</text><text x="440" y="40">0101 110101</text>
+    <text x="470" y="300">1101 00101</text><text x="460" y="250">011 10010</text>
+  </g>
+
+  <!-- file window -->
+  <rect x="70" y="60" width="270" height="220" rx="16" fill="#1e293b" stroke="#334155"/>
+  <circle cx="92" cy="80" r="5" fill="#ef4444"/><circle cx="108" cy="80" r="5" fill="#f59e0b"/><circle cx="124" cy="80" r="5" fill="#22c55e"/>
+  <g font-family="Arial, sans-serif">
+    <!-- rows -->
+    <g transform="translate(90 104)">
+      <path d="M0 4h12l4 4h16v18H0z" fill="#fbbf24"/>
+      <rect x="44" y="10" width="120" height="7" rx="3.5" fill="#cbd5e1"/>
+      <circle cx="220" cy="14" r="9" fill="#22c55e"/><path d="M215 14l3 3 6-6" stroke="#fff" stroke-width="2.4" fill="none"/>
+    </g>
+    <g transform="translate(90 144)">
+      <path d="M0 0h20l8 8v22H0z" fill="#94a3b8"/>
+      <rect x="44" y="10" width="96" height="7" rx="3.5" fill="#cbd5e1"/>
+      <circle cx="220" cy="14" r="9" fill="#22c55e"/><path d="M215 14l3 3 6-6" stroke="#fff" stroke-width="2.4" fill="none"/>
+    </g>
+    <g transform="translate(90 184)">
+      <rect x="-8" y="-8" width="246" height="46" rx="10" fill="#7f1d1d" opacity=".55"/>
+      <path d="M0 0h20l8 8v22H0z" fill="#f87171"/>
+      <rect x="44" y="10" width="110" height="7" rx="3.5" fill="#fecaca"/>
+      <circle cx="220" cy="14" r="9" fill="#ef4444"/><path d="M220 9v6M220 18v1" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+    </g>
+    <g transform="translate(90 232)">
+      <path d="M0 4h12l4 4h16v18H0z" fill="#fbbf24"/>
+      <rect x="44" y="10" width="80" height="7" rx="3.5" fill="#cbd5e1"/>
+      <circle cx="220" cy="14" r="9" fill="#22c55e"/><path d="M215 14l3 3 6-6" stroke="#fff" stroke-width="2.4" fill="none"/>
+    </g>
+  </g>
+
+  <!-- scan line -->
+  <rect x="70" y="176" width="270" height="3" fill="#fb923c" opacity=".9"/>
+  <rect x="70" y="160" width="270" height="16" fill="#fb923c" opacity=".12"/>
+
+  <!-- shield + magnifier -->
+  <g transform="translate(380 70)">
+    <path d="M80 0 L150 26 V96 C150 150 112 182 80 196 C48 182 10 150 10 96 V26 Z" fill="url(#shield)"/>
+    <circle cx="74" cy="92" r="30" fill="none" stroke="#ffffff" stroke-width="9"/>
+    <line x1="96" y1="114" x2="120" y2="138" stroke="#ffffff" stroke-width="11" stroke-linecap="round"/>
+  </g>
+</svg>

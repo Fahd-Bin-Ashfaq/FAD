@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fahad Ahmed | Software Engineer – Python Backend & AI</title>
+  <meta name="description" content="Fahad Ahmed is a Software Engineer in Karachi specializing in Python backend development and AI integration: FastAPI, REST APIs, AI chatbots, data pipelines and Docker.">
+  <meta name="author" content="Fahad Ahmed">
+
+  <!-- Open Graph (link share preview) -->
+  <meta property="og:title" content="Fahad Ahmed | Software Engineer – Python Backend & AI">
+  <meta property="og:description" content="I build Python backends, REST APIs and AI chatbots & assistants for real business operations.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://FahadBinAshfaq.com">
+  <meta property="og:image" content="assets/profile.jpg">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232563eb'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>FA</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">&lt;Fahad /&gt;</a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#content">Podcast &amp; Courses</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-greeting">Hi, I'm</p>
+          <h1>Fahad Ahmed</h1>
+          <h2 class="hero-role">Software Engineer · <span class="accent">Python Backend &amp; AI</span></h2>
+          <p class="hero-desc">
+            I build Python backends, REST APIs and AI chatbots &amp; assistants that automate
+            real business operations, currently for the logistics industry.
+          </p>
+          <p class="hero-location">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Karachi, Pakistan
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="assets/Fahad_Ahmed_CV.pdf" class="btn btn-outline" download>Download CV</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <!-- Photo lagane ke liye neeche wali line hata kar ye likhein:
+               <img src="assets/profile.jpg" alt="Fahad Ahmed"> -->
+          <div class="avatar-placeholder">FA</div>
+
+          <div class="socials">
+            <a href="https://github.com/Fahd-Bin-Ashfaq" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/fahad-bin-ashfaq07/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            </a>
+            <a href="https://youtu.be/l9LP7UnPDsk" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>
+            </a>
+            <a href="mailto:fbinashfaq@gmail.com" aria-label="Email" title="Email">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title"><span class="num">01.</span> About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm a <strong>Software Engineer</strong> specializing in <strong>Python backend development
+              and AI integration</strong>. At Office Automation Service, I design and deploy AI chatbots and
+              assistants that automate customer and operational queries for logistics operations.
+            </p>
+            <p>
+              I work with <strong>FastAPI, Flask, REST APIs, data pipelines, MongoDB, SQL and Docker</strong>.
+              Before this, I built real-time sales dashboards and ETL pipelines as an Associate Data Engineer.
+            </p>
+            <p>
+              I'm a co-author of a research paper published in <em>Artificial Intelligence Review</em>
+              (Springer Nature) on Generative AI in cybersecurity. I also teach programming as an IT Instructor
+              at BanoQabil and share free courses on YouTube.
+            </p>
+          </div>
+          <div class="stats">
+            <div class="stat"><span class="stat-num">4</span><span class="stat-label">Professional Roles</span></div>
+            <div class="stat"><span class="stat-num">7</span><span class="stat-label">Free YouTube Courses</span></div>
+            <div class="stat"><span class="stat-num">1</span><span class="stat-label">Springer Nature Publication</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <!-- Icons: https://devicon.dev (agar koi icon load na ho to wo khud chhup jata hai) -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <h2 class="section-title"><span class="num">02.</span> Skills &amp; Tech Stack</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3><span class="skill-ico">💻</span> Languages</h3>
+            <div class="chips">
+              <span><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/python/python-original.svg" alt="" onerror="this.remove()">Python</span>
+              <span><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/nodejs/nodejs-original.svg" alt="" onerror="this.remove()">JavaScript (Node.js)</span>
+              <span><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="" onerror="this.remove()">SQL</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3><span class="skill-ico">⚙️</span> Backend Development</h3>
+            <div class="chips">
+              <span><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/fastapi/fastapi-original.svg" alt="" onerror="this.remove()">FastAPI</span>
+              <span><img class="inv" src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/flask/flask-original.svg" alt="" onerror="this.remove()">Flask</span>
+              <span><i class="emo">🌐</i>REST API Design</span>
+              <span><i class="emo">🧩</i>Microservices</span>
+              <span><i class="emo">🔐</i>Authentication</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3><span class="skill-ico">🤖</span> AI &amp; Automation</h3>
+            <div class="chips">
+              <span><i class="emo">💬</i>AI Chatbots</span>
+              <span><i class="emo">🧠</i>AI Assistants</span>
+              <span><i class="emo">🔌</i>LLM API Integration</span>
+              <span><i class="emo">✍️</i>Prompt Engineering</span>
+              <span><i class="emo">⚡</i>Workflow Automation</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3><span class="skill-ico">📊</span> Data Engineering</h3>
+            <div class="chips">
+              <span><i class="emo">🔄</i>ETL Pipelines</span>
+              <span><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/pandas/pandas-original.svg" alt="" onerror="this.remove()">Pandas</span>
+              <span><i class="emo">🧹</i>Data Cleaning</span>
+              <span><i class="emo">📈</i>Real-Time Dashboards</span>
+              <span><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/streamlit/streamlit-original.svg" alt="" onerror="this.remove()">Streamlit</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3><span class="skill-ico">🗄️</span> Databases</h3>
+            <div class="chips">
+              <span><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/mongodb/mongodb-original.svg" alt="" onerror="this.remove()">MongoDB</span>
+              <span><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/mysql/mysql-original.svg" alt="" onerror="this.remove()">MySQL</span>
+              <span><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/postgresql/postgresql-original.svg" alt="" onerror="this.remove()">SQL Databases</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3><span class="skill-ico">🛠️</span> DevOps &amp; Tools</h3>
+            <div class="chips">
+              <span><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/docker/docker-original.svg" alt="" onerror="this.remove()">Docker</span>
+              <span><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/linux/linux-original.svg" alt="" onerror="this.remove()">Linux</span>
+              <span><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/git/git-original.svg" alt="" onerror="this.remove()">Git</span>
+              <span><img class="inv" src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/github/github-original.svg" alt="" onerror="this.remove()">GitHub</span>
+              <span><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/postman/postman-original.svg" alt="" onerror="this.remove()">Postman</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <h3><span class="skill-ico">🛡️</span> Security</h3>
+            <div class="chips">
+              <span><i class="emo">🔒</i>Secure Coding</span>
+              <span><i class="emo">🔍</i>Vulnerability Assessment</span>
+              <span><i class="emo">🦈</i>Wireshark</span>
+              <span><i class="emo">📡</i>Nmap</span>
+              <span><i class="emo">🕷️</i>Burp Suite</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <h2 class="section-title"><span class="num">03.</span> Work Experience</h2>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <span class="timeline-date">02/2026 – Present · Full-time</span>
+            <h3>Software Engineer (AI &amp; Backend) <span class="at">@ Office Automation Service (Logistics)</span></h3>
+            <ul>
+              <li>Driving AI adoption in logistics operations by designing and deploying an AI-powered chatbot that automates customer and operational query handling.</li>
+              <li>Built an AI assistant that streamlines internal workflows and gives staff instant access to operational information.</li>
+              <li>Develop scalable Python backend services and REST APIs with FastAPI and Flask to power AI features and business applications.</li>
+              <li>Manage data with MongoDB and SQL, test APIs with Postman, and deploy services using Docker on Linux.</li>
+              <li>Maintain clean, collaborative codebases with Git and GitHub through branching, pull requests and code reviews.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-date">01/2025 – 01/2026 · Full-time</span>
+            <h3>Associate Data Engineer <span class="at">@ Queless (Pvt.) Ltd.</span></h3>
+            <ul>
+              <li>Built a real-time sales dashboard with Python, Streamlit and SQL that tracks order-taker performance by time, item and individual sales, giving management live visibility into top performers and best-selling items.</li>
+              <li>Developed Python ETL pipelines to extract, transform and validate data from multiple sources.</li>
+              <li>Automated data cleaning and reporting workflows with Pandas and SQL, reducing manual reporting effort.</li>
+              <li>Integrated REST APIs and MongoDB to keep data accurate and consistent across systems.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-date">12/2023 – Present · Part-time</span>
+            <h3>IT Instructor <span class="at">@ BanoQabil</span></h3>
+            <ul>
+              <li>Teach Python, software development, Git and GitHub, and web development through hands-on projects.</li>
+              <li>Mentor students in problem-solving, secure coding practices and building job-ready portfolios.</li>
+              <li>Guide students through real-world programming projects from idea to working application.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-date">03/2024 – 07/2025 · Internship</span>
+            <h3>Research Assistant <span class="at">@ Sindh Madressatul Islam University</span></h3>
+            <ul>
+              <li>Conducted research in cybersecurity and network security, including threat analysis and vulnerability assessment.</li>
+              <li>Collected and analyzed research data and prepared technical reports, contributing to a published review paper.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <h2 class="section-title"><span class="num">04.</span> Featured Projects</h2>
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="project-thumb"><img src="assets/project-ai-assistant.svg" alt="AI assistant for logistics operations" loading="lazy"></div>
+            <div class="project-body">
+              <h3>AI Assistant for Logistics Operations</h3>
+              <p>An AI assistant that automates routine logistics tasks and answers staff queries in natural language. It integrates LLM APIs with backend services to give accurate, context-aware answers from company data.</p>
+              <div class="tags"><span>Python</span><span>FastAPI</span><span>LLM APIs</span><span>Prompt Engineering</span><span>MongoDB</span><span>Docker</span></div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb"><img src="assets/project-ai-chatbot.svg" alt="AI chatbot for logistics" loading="lazy"></div>
+            <div class="project-body">
+              <h3>AI Chatbot Integration (Logistics)</h3>
+              <p>An AI chatbot integrated into logistics operations that handles customer and operational queries automatically, with conversation workflows and API integrations for real-time, 24/7 support.</p>
+              <div class="tags"><span>Python</span><span>FastAPI</span><span>LLM APIs</span><span>REST APIs</span><span>Docker</span></div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb"><img src="assets/project-whatsapp-bot.svg" alt="WhatsApp chatbot" loading="lazy"></div>
+            <div class="project-body">
+              <h3>WhatsApp Chatbot Integration</h3>
+              <p>A WhatsApp chatbot with a Node.js backend using the Baileys WhatsApp Web API, with message handling, automated replies and real-time conversation workflows.</p>
+              <div class="tags"><span>Node.js</span><span>JavaScript</span><span>Baileys</span><span>REST APIs</span></div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb"><img src="assets/project-meta-scan.svg" alt="META Scan file security scanner" loading="lazy"></div>
+            <div class="project-body">
+              <h3>META Scan <span class="badge">Final Year Project</span></h3>
+              <p>A Python desktop application that scans folders and detects suspicious or harmful files, with a clean Flet user interface and automated file analysis using security scanning libraries.</p>
+              <div class="tags"><span>Python</span><span>Flet</span><span>File System Analysis</span></div>
+            </div>
+          </article>
+
+        </div>
+        <p class="more-link">
+          <a href="https://github.com/Fahd-Bin-Ashfaq" target="_blank" rel="noopener">See more on GitHub &rarr;</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== PODCAST & COURSES ===== -->
+    <section class="section" id="content">
+      <div class="container">
+        <h2 class="section-title"><span class="num">05.</span> Podcast &amp; Courses</h2>
+
+        <!-- Podcast -->
+        <div class="podcast-card">
+          <a href="https://youtu.be/l9LP7UnPDsk" target="_blank" rel="noopener" class="podcast-video" aria-label="Watch the podcast on YouTube">
+            <img src="https://i.ytimg.com/vi/l9LP7UnPDsk/hqdefault.jpg" alt="Latest podcast episode thumbnail" loading="lazy">
+            <span class="play-btn">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="#fff"><path d="M8 5v14l11-7z"/></svg>
+            </span>
+          </a>
+          <div class="podcast-info">
+            <span class="pub-label">🎙️ Podcast · Latest Episode</span>
+            <h3>Listen to My Latest Podcast</h3>
+            <p>
+              Conversations on software engineering, AI and building a career in tech.
+            </p>
+            <a href="https://youtu.be/l9LP7UnPDsk" target="_blank" rel="noopener" class="btn btn-primary btn-sm btn-yt">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>
+              Watch on YouTube
+            </a>
+          </div>
+        </div>
+
+        <!-- YouTube course playlists -->
+        <h3 class="sub-title">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="#ff0000"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>
+          Free YouTube Courses
+        </h3>
+        <div class="course-grid">
+          <a href="https://www.youtube.com/playlist?list=PLX1eV90xXed2wujMJKUdsWQu2UMS9ROGO" target="_blank" rel="noopener" class="course-card">
+            <div class="course-thumb c-python"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/python/python-original.svg" alt="" onerror="this.remove()"></div>
+            <div class="course-body">
+              <h4>Python Programming Course</h4>
+              <p>Learn Python step by step, from the basics to writing real programs.</p>
+              <span class="course-meta">▶ Watch Playlist</span>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/playlist?list=PLX1eV90xXed3WP79UXcC4HYCYafCpuFir" target="_blank" rel="noopener" class="course-card">
+            <div class="course-thumb c-java"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/java/java-original.svg" alt="" onerror="this.remove()"></div>
+            <div class="course-body">
+              <h4>Complete Java Programming</h4>
+              <p>Java programming from the ground up, covering the core language.</p>
+              <span class="course-meta">▶ Watch Playlist</span>
+            </div>
+          </a>
+          <!-- NOTE: is ka link "Complete Java Programming" jaisa hi hai. Sahi link mile to yahan badal dein. -->
+          <a href="https://www.youtube.com/playlist?list=PLX1eV90xXed3WP79UXcC4HYCYafCpuFir" target="_blank" rel="noopener" class="course-card">
+            <div class="course-thumb c-oop"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/java/java-original.svg" alt="" onerror="this.remove()"></div>
+            <div class="course-body">
+              <h4>OOP with Java</h4>
+              <p>Object-oriented programming concepts with practical Java examples.</p>
+              <span class="course-meta">▶ Watch Playlist</span>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/playlist?list=PLX1eV90xXed3-ptr21Zib0e8zXvFYB_W_" target="_blank" rel="noopener" class="course-card">
+            <div class="course-thumb c-practice"><span class="course-emo">🧩</span></div>
+            <div class="course-body">
+              <h4>Programming Practice Questions</h4>
+              <p>Solve programming problems step by step to sharpen your logic.</p>
+              <span class="course-meta">▶ Watch Playlist</span>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/playlist?list=PLX1eV90xXed15pZC7P3A2su8m7vmW9Mgv" target="_blank" rel="noopener" class="course-card">
+            <div class="course-thumb c-scrape"><span class="course-emo">🕸️</span></div>
+            <div class="course-body">
+              <h4>Web Scraping &amp; Automation</h4>
+              <p>Collect data from websites and automate repetitive tasks with code.</p>
+              <span class="course-meta">▶ Watch Playlist</span>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/playlist?list=PLX1eV90xXed1L0LddArJN8kYE044OyqTd" target="_blank" rel="noopener" class="course-card">
+            <div class="course-thumb c-flutter"><img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/flutter/flutter-original.svg" alt="" onerror="this.remove()"></div>
+            <div class="course-body">
+              <h4>Flutter Programming Course</h4>
+              <p>Build cross-platform mobile apps with Flutter and Dart.</p>
+              <span class="course-meta">▶ Watch Playlist</span>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/playlist?list=PLX1eV90xXed2P9ZVaVctfsez_qHZV2VMD" target="_blank" rel="noopener" class="course-card">
+            <div class="course-thumb c-cyber"><span class="course-emo">🛡️</span></div>
+            <div class="course-body">
+              <h4>Cyber Security Course</h4>
+              <p>Core cybersecurity concepts, tools and how to stay secure.</p>
+              <span class="course-meta">▶ Watch Playlist</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Course repositories -->
+        <h3 class="sub-title">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+          Course Repositories
+        </h3>
+        <div class="repo-grid">
+          <a href="https://github.com/Fahd-Bin-Ashfaq/web-development-full-course" target="_blank" rel="noopener" class="repo-card">
+            <div class="repo-head">
+              <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/react/react-original.svg" alt="" onerror="this.remove()">
+              <h4>web-development-full-course</h4>
+            </div>
+            <p>MERN stack web development course: MongoDB, Express, React and Node.js.</p>
+            <span class="repo-lang"><i class="dot dot-js"></i> JavaScript</span>
+          </a>
+          <a href="https://github.com/Fahd-Bin-Ashfaq/AI-Engineer" target="_blank" rel="noopener" class="repo-card">
+            <div class="repo-head">
+              <span class="repo-emo">🤖</span>
+              <h4>AI-Engineer</h4>
+            </div>
+            <p>AI for Everyone: course material for learning AI engineering.</p>
+            <span class="repo-lang"><i class="dot dot-py"></i> Python</span>
+          </a>
+          <a href="https://github.com/Fahd-Bin-Ashfaq/Python-Programming-full-course" target="_blank" rel="noopener" class="repo-card">
+            <div class="repo-head">
+              <img src="https://cdn.jsdelivr.net/npm/devicon@2.16.0/icons/python/python-original.svg" alt="" onerror="this.remove()">
+              <h4>Python-Programming-full-course</h4>
+            </div>
+            <p>Code and exercises from the complete Python programming course.</p>
+            <span class="repo-lang"><i class="dot dot-py"></i> Python</span>
+          </a>
+          <a href="https://github.com/Fahd-Bin-Ashfaq/cyber-security-full-course" target="_blank" rel="noopener" class="repo-card">
+            <div class="repo-head">
+              <span class="repo-emo">🛡️</span>
+              <h4>cyber-security-full-course</h4>
+            </div>
+            <p>Notes and practical material from the full cyber security course.</p>
+            <span class="repo-lang"><i class="dot dot-sec"></i> Cyber Security</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION & ACHIEVEMENTS ===== -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <h2 class="section-title"><span class="num">06.</span> Education &amp; Achievements</h2>
+
+        <div class="info-grid">
+          <div class="info-card">
+            <h3>🎓 Education</h3>
+            <div class="info-item">
+              <h4>BS Software Engineering</h4>
+              <p>Sindh Madressatul Islam University</p>
+              <span class="meta">11/2021 – 09/2025 · CGPA 3.2</span>
+            </div>
+            <div class="info-item">
+              <h4>Intermediate (Pre-Engineering)</h4>
+              <p>Govt. S.M. Science College</p>
+              <span class="meta">03/2019 – 09/2020</span>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <h3>📜 Certifications</h3>
+            <ul class="check-list">
+              <li>CS50: Fundamentals of Computer Science <span class="meta">Harvard University</span></li>
+              <li>DevOps Fundamentals</li>
+              <li>Python for Data Science</li>
+            </ul>
+          </div>
+
+          <div class="info-card">
+            <h3>🤝 Volunteering &amp; Leadership</h3>
+            <div class="info-item">
+              <h4>Event Coordinator · Google DevFest</h4>
+              <p>Helped plan, coordinate and run student-focused tech events.</p>
+            </div>
+            <div class="info-item">
+              <h4>Host · Youth Club Event, SMIU</h4>
+              <p>Managed stage activities, audience engagement and event flow.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="publication">
+          <span class="pub-label">📄 Published Research · 05/2025</span>
+          <h3>Generative AI Revolution in Cybersecurity: A Comprehensive Review of Threat Intelligence and Operations</h3>
+          <p class="pub-journal"><em>Artificial Intelligence Review</em> (Springer Nature)</p>
+          <p class="pub-authors">
+            Mueen Uddin, Muhammad Saad Irshad, Irfan Ali Kandhro, Fuhid Alanazi, <strong>Fahad Ahmed</strong>,
+            Muhammad Maaz, Saddam Hussain, Syed Sajid Ullah
+          </p>
+          <a href="https://link.springer.com/article/10.1007/s10462-025-11219-5" target="_blank" rel="noopener" class="btn btn-outline btn-sm pub-link">Read Paper &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section" id="contact">
+      <div class="container contact-wrap">
+        <h2 class="section-title center"><span class="num">07.</span> Get In Touch</h2>
+        <p class="contact-intro">
+          I'm open to new opportunities and collaborations in Python backend and AI development.
+          Whether you have a project, a job offer or just want to say hi, feel free to reach out.
+        </p>
+
+        <div class="contact-cards">
+          <a href="mailto:fbinashfaq@gmail.com" class="contact-card">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+            <span>fbinashfaq@gmail.com</span>
+          </a>
+          <a href="tel:+923152731351" class="contact-card">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+92 315 2731351</span>
+          </a>
+          <a href="https://www.linkedin.com/in/fahad-bin-ashfaq07/" target="_blank" rel="noopener" class="contact-card">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/Fahd-Bin-Ashfaq" target="_blank" rel="noopener" class="contact-card">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+          </div>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Fahad Ahmed · Karachi, Pakistan</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
